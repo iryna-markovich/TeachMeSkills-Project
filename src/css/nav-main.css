@@ -1,0 +1,191 @@
+.header__nav-main {
+    background: #ffffff;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__nav-main>ul {
+    list-style: none;
+    position: relative;
+}
+
+.header__nav-main>ul>li {
+    display: inline-block;
+}
+
+.header__nav-main,
+.section {
+    margin: 0 auto;
+}
+
+.menu-top-level, .menu-mid-level, .menu-bottom-level, .menu-wide-simple, .menu-wide-cards {
+    list-style: none;
+    position: absolute;
+    padding: 0;
+    border: solid 1px #ebebeb;
+    background-color: #ffffff;
+    font-family: "Lato", sans-serif;
+    z-index: 1000;
+    margin: 0;
+    opacity: 0;
+    transition: transform 0.3s,opacity 0.3s;
+    transform-style: preserve-3d;
+    transform-origin: 0% 0%;
+    transform: rotateX(-90deg);
+    visibility: hidden;
+}
+
+.menu-top-level, .menu-mid-level, .menu-bottom-level {
+    min-width: 200px;
+}
+
+.menu-wide-simple, .menu-wide-cards {
+    left: 0;
+    padding: 15px;
+    width: 100%;
+    max-width: 1200px;
+    text-align: left;
+    overflow: hidden;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+.menu-wide-simple .menu-top-level {
+    position: relative;
+    border: none;
+}
+
+.menu-wide-simple .menu-top-level>li>a:hover {
+    background-color: transparent;
+    margin-left: -3px;
+}
+.menu-wide-simple .title-nav {
+    color: #424242;
+    padding: 10px 0 5px;
+    font-weight: bold;
+    border-bottom: 1px solid #ebebeb;
+    display: block;
+    line-height: normal;
+}
+.menu-wide-simple>li {
+    width: 20%;
+    float: left;
+    margin: 0 15px;
+    overflow: hidden;
+}
+.menu-top-level .icon, .menu-wide-simple .icon {
+    padding: 0;
+    margin: 0;
+}
+.menu-top-level .icon-angle-right::after, .menu-wide-simple .icon-angle-right::after {
+    transform: rotate(135deg);
+    margin: -24px 0px 0px 0px;
+    width: 4px;
+    height: 4px;
+}
+.menu-top-level .icon-angle-right::after {
+    right: 15px;
+}
+.menu-wide-simple .icon-angle-right::after{
+    left: 0;
+}
+.menu-mid-level, .menu-bottom-level {
+    left: 100%;
+    margin: -41px 0 0 0;
+    z-index: 1001;
+}
+
+.header__nav-main>ul li:hover .menu-top-level,
+.header__nav-main>ul li:hover .menu-wide-simple,
+.header__nav-main>ul li:hover .menu-wide-cards,
+.menu-top-level li:hover .menu-mid-level,
+.menu-mid-level li:hover .menu-bottom-level {
+    opacity: 1;
+    transform: rotateX(-0deg);
+    visibility: visible;
+}
+
+.menu-top-level li {
+    width: 100%;
+}
+.menu-top-level>li>a:hover,
+.menu-mid-level>li>a:hover,
+.menu-bottom-level>li>a:hover,
+.menu-wide-cards>li>ul>li>a:hover {
+    color: #95cac5;
+    background-color: #f7faf9;
+}
+.menu-wide-simple .icon-angle-right:hover::after {
+    border-color: #95cac5;
+}
+.menu-top-level>li>a, .menu-mid-level>li>a, .menu-bottom-level>li>a, .menu-wide-cards>li>ul>li>a {
+    border-bottom: 1px dashed #ebebeb;
+    color: #282828;
+    display: block;
+    line-height: 1.5em;
+    padding: 10px 15px;
+    font-size: 13px;
+    transition: all 0.2s ease;
+}
+
+.menu-top-level>li:last-child a,
+.menu-mid-level>li:last-child a,
+.menu-bottom-level>li:last-child a,
+.menu-wide-cards>li>ul>li:last-child a {
+    border-bottom: none;
+}
+
+.header__nav-main .title-article, .header__nav-main .title-article a {
+    font-size: 15px;
+}
+.header__nav-main .title-article:hover, .header__nav-main .title-article a:hover {
+    border-bottom: none;
+    color: #95cac5;
+}
+
+.header__nav-main .pic-container {
+    overflow: hidden;
+    height: 120px;
+    width: auto;
+}
+.header__nav-main .pic-container img{
+    width: 100%;
+}
+.menu-wide-cards ul, .menu-wide-cards li div, .menu-wide-cards>div>div {
+    display: inline-block;
+    float: left;
+}
+.menu-wide-cards ul {
+    width: 25%;
+    border-left: 1px dashed #ebebeb;
+    border-top: 1px dashed #ebebeb;
+    border-bottom: 1px dashed #ebebeb;
+}
+.menu-wide-cards li>div {
+    width: 75%;
+    border: 1px dashed #ebebeb;
+    padding: 15px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+.menu-wide-cards li>div>div {
+    overflow: hidden;
+    margin: 10px;
+    max-width: calc(33% - 20px);
+}
+.link-view-all {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0 0 0;
+    border-top: 1px dashed #ebebeb;
+}
+
+.only-cards li>div {
+    width: 100%;
+    padding: 0;
+    border: none;
+}
+.only-cards li>div>div {
+    max-width: calc(25% - 20px);
+}

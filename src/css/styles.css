@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Lato', sans-serif;
+    color: #787878;
+    font-size: 15px;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+footer {
+    width: 100%;
+    overflow: hidden;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}

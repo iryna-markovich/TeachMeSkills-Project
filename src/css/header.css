@@ -1,0 +1,240 @@
+.header__container,
+.section__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section__container,
+.header__nav-main,
+.article-preview__item,
+.article-post__item {
+    border-bottom: 1px solid #ebebeb;
+}
+
+.section__logo,
+.section__part-left,
+.section__part-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 15px;
+    line-height: 2em;
+}
+
+.section__part-left,
+.section__part-right {
+    width: 25%;
+}
+
+.section__logo {
+    text-align: center;
+    border-left: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    width: 50%;
+}
+
+.section__logo>a {
+    text-decoration: none;
+    padding: 73px 0 0;
+    display: block;
+}
+.section__logo img {
+    width: 100%;
+    max-width: 362px;
+}
+.section__logo .group-social-media {
+    display: none;
+}
+.section__part-left {
+    text-align: left;
+    font-size: 13px;
+    padding-top: 43px;
+}
+
+.section__part-right {
+    text-align: right;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.icon {
+    cursor: pointer;
+    padding: 5px;
+    position: relative;
+}
+
+.icon::after {
+    content: '';
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    margin: 8px -3px 0;
+}
+
+.icon-angle-left::after {
+    transform: rotate(315deg);
+}
+.icon-angle-right::after {
+    transform: rotate(135deg);
+}
+.icon-angle-bottom::after {
+    transform: rotate(225deg);
+    width: 4px;
+    height: 4px;
+    margin: 23px 10px;
+}
+.section__part-left .controls, .section__part-right .controls {
+    margin: 10px 0 0 0;
+}
+.controls {
+    position: relative;
+}
+
+.icon-weather {
+    line-height: 10px;
+}
+
+.section {
+    overflow: hidden;
+    display: flex;
+    flex-flow: wrap;
+}
+
+.section__half-part {
+    width: 50%;
+    line-height: 1.75em;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.section__half-part_1-1 div {
+    padding: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    opacity: 0;
+    background: rgba(149, 202, 197, 0.85);
+    transition: all 0.2s ease-in-out;
+}
+
+.section__half-part_1-1,
+.section__half-part_2-2 a,
+.section__half-part_2-3 a {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section__half-part_1-1 {
+    background-image: url(../../src/img/featured-three-one.jpg);
+    color: #ffffff;
+}
+
+.section__half-part_1-1 .title-article,
+.section__half-part_1-1 .title-article a {
+    color: #ffffff;
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.section__half-part_1-1 .title-article:hover,
+.section__half-part_1-1 .title-article a:hover {
+    border-bottom: none;
+}
+
+.section__half-part_2-1,
+.section__half-part_2-4 {
+    background: #f8f8f8;
+    padding: 10% 5%;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section__half-part_2-2,
+.section__half-part_2-3 {
+    overflow: hidden;
+}
+
+.section__half-part_2-2 a,
+.section__half-part_2-3 a {
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.section__half-part_2-2 a {
+    background-image: url(../../src/img/featured-three-three.jpg);
+}
+
+.section__half-part_2-3 a {
+    background-image: url(../../src/img/featured-four-four.jpg);
+}
+
+.section__half-part_1-1 div:hover {
+    opacity: 1;
+}
+
+.section__half-part_2-2:hover a,
+.section__half-part_2-3:hover a {
+    transform: rotate(20deg) scale(1.7);
+}
+
+.button {
+    font-size: 11px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 11px;
+    display: inline-block;
+}
+
+.button-whole {
+    background: #95cac5;
+    padding: 10px 24px;
+}
+
+.button-empty {
+    background: none;
+    border-bottom: 2px solid #ffffff;
+    line-height: 2em;
+}
+
+.button-special {
+    border: 2px solid #f8f8f8;
+    outline: 1px solid #95cac5;
+}
+
+.button-tag {
+    border: 1px solid #e1e1e1;
+    color: #505050;
+    text-transform: capitalize;
+    font-size: 12px;
+    line-height: 1.4em;
+    margin: 0 5px 5px 0;
+    padding: 6px 15px;
+    letter-spacing: 0.02em;
+    transition: all 0.2s linear 0s;
+}
+
+.button-tag:hover {
+    color: #ffffff;
+    background: #95cac5;
+    border-color: #95cac5;
+}
+
+.button-ordinary {
+    margin-top: 10px;
+    transition: all .2s ease-in-out;
+}
+
+.button-ordinary:hover {
+    background: rgba(149, 202, 197, 0.8);
+}
