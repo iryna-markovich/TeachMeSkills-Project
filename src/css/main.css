@@ -156,9 +156,13 @@ aside .editors-pick {
 aside .editors-pick>div{
     padding: 15px;
     display: flex;
+    position: absolute;
     justify-content: space-between;
     flex-direction: column;
     height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
     align-items: flex-start;
     opacity: 0;
     background: rgba(149, 202, 197, 0.85);
@@ -178,6 +182,8 @@ aside .editors-pick .title-article a {
 }
 aside .editors-pick-1 {    
     background-image: url(../../src/img/featured-one.jpg);
+    padding: 50%;
+    position: relative;
 }
 
 aside .title-article .fab.button-tag,

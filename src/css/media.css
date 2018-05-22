@@ -1,12 +1,14 @@
+@media (min-width: 1001px){
+    .mobile__nav-top {
+        display: none !important;
+    }
+}
 @media (max-width:1200px){
     .wrapper {
         width: 95%;
     }
 }
 @media (max-width:1000px){
-    .wrapper {
-        width: 90%;
-    }
     .wrapper {
         width: 90%;
     }
@@ -27,6 +29,9 @@
     }
     .section__half-part {
         width: 100%;
+    }
+    .section__half-part .section__inner-part:first-child{
+        flex-flow: wrap-reverse;
     }
     .section__half-part_1-1 div {
         padding: 24% 10%;

@@ -26,3 +26,21 @@ a {
 ul {
     list-style: none;
 }
+.top-button {
+    position: fixed;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: block;
+    bottom: 50px;
+    right: 25px;
+    color: #95cac5;
+    border: 1px solid #95cac5;
+    background: #ffffff;
+    padding: 9px 14px;
+    transition: all 0.2s ease-in-out;
+}
+.top-button:hover {
+    color: #ffffff;
+    background: #95cac5;
+}

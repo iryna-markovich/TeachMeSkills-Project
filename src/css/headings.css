@@ -40,8 +40,8 @@
 .title-nav,
 .title-nav a {
     color: black;
-    padding: 19px 23px;
-    line-height: 54px;
+    padding: 20px 25px;
+    display: block;
     font-size: 13px;
 }
 
@@ -121,8 +121,9 @@
     font-style: italic;
     line-height: 35px;
 }
+
 .link-view-all {
-    font-size: 12px; 
+    font-size: 12px;
     color: black;
 }
 
@@ -133,12 +134,14 @@
     color: #95cac5;
     display: block;
 }
+
 .nav-section a {
-    font-size: 11px;  
+    font-size: 11px;
     color: #787878;
     font-weight: bold;
     letter-spacing: 0.2em;
 }
+
 .nav-section a:hover {
     color: #95cac5;
 }

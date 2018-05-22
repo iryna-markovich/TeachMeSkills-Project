@@ -1,0 +1,92 @@
+.mobile__nav-top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ebebeb;
+    position: relative;
+}
+
+.mobile__menu-button,
+.mobile__search-button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 18px 20px;
+    outline: none;
+}
+
+.mobile__menu-button {
+    border-right: 1px solid #ebebeb;
+    font-size: 20px;
+}
+
+.mobile__search-button {
+    border-left: 1px solid #ebebeb;
+    font-size: 15px;
+}
+
+.mobile__container {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    display: none;
+    z-index: 3;
+}
+
+.mobile__close-button {
+    position: relative;
+    height: 100vh;
+    width: calc(100% - 240px);
+    background: rgba(0, 0, 0, .4);
+    border: none;
+    outline: none;
+}
+.mobile__close-button i {
+    color: rgba(255, 255, 255, 0.70);
+    position: absolute;
+    top: 30px;
+    left: 20%;
+    font-size: 25px;
+}
+.mobile__container-inner {
+    height: 100vh;
+    width: 0px;
+    position: relative;
+    background: #ffffff;
+    transition: width 0.3s ease;
+} 
+.mobile__menu .title-nav, .mobile__menu .title-nav a {
+    width: 100%;
+    display: block;
+    color: #505050;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 15px;
+    position: relative;
+}
+.mobile__menu .title-nav:hover, .mobile__menu .title-nav a:hover {
+    color:#95cac5;
+    background: #f5f5f5;
+    cursor: default;
+}
+.plus-button::after {
+    content: '+';
+    font-weight: 900;
+    font-size: 25px;
+    border-left: 1px solid #e1e1e1;
+    padding: 0 15px;
+    color: #c5c5c5;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.mobile__nav-top .form__holder {
+    width: 100%;
+    padding: 30px;
+    background: transparent;
+}
+.mobile__nav-top .form__holder button:hover{
+    background: #f5f5f5;
+}

@@ -90,7 +90,7 @@ footer .article-preview__item {
     padding: 0 0 20px 0;
 }
 
-.footer__contacts, .footer__contacts div, .footer__form {
+.footer__contacts, .footer__contacts div, .form__holder {
     background: #f4faf9;
     display: flex;
     align-items: center;
@@ -118,10 +118,10 @@ footer .article-preview__item {
     text-transform: capitalize;
     padding: 0 10px 0 0;
 }
-.footer__form {
+.form__holder {
     width: 45%;
 }
-.footer__form input, .footer__form button {
+.form__holder input, .form__holder button {
     color: #555;
     background: #ffffff;
     font-family: "Lato-Regular", Arial, Helvetica, sans-serif;
@@ -131,22 +131,22 @@ footer .article-preview__item {
     outline: none;
 }
 
-.footer__form input {
+.form__holder input {
 display: block;
 width: 100%;
 }
 
-.footer__form input::-webkit-input-placeholder {color: #999999;}
-.footer__form input::-moz-placeholder {color: #999999;}
-.footer__form input::-ms-placeholder {color: #999999;}
-.footer__form input::-o-placeholder {color: #999999;}
-.footer__form input::placeholder {color: #999999;}
+.form__holder input::-webkit-input-placeholder {color: #999999;}
+.form__holder input::-moz-placeholder {color: #999999;}
+.form__holder input::-ms-placeholder {color: #999999;}
+.form__holder input::-o-placeholder {color: #999999;}
+.form__holder input::placeholder {color: #999999;}
 
-.footer__form button {
+.form__holder button {
     border-left: none;
     transition: all 0.3s ease-in-out;
 }
-.footer__form button:hover {
+.form__holder button:hover {
     background: #95cac5;
     border-color: #95cac5;
     color: white;
