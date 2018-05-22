@@ -31,6 +31,7 @@
 
 .subtitle-category,
 .subtitle-category a {
+    width: auto;
     font-size: 11px;
     word-spacing: 3px;
     color: #787878;

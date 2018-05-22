@@ -3,10 +3,6 @@ function openContainer() {
     for (i = 0; i < mobileContainer.length; i++) {
         mobileContainer[i].style.display = 'flex';
     }
-    let mobileContainerInner = document.getElementsByClassName('mobile__container-inner');
-    for (i = 0; i < mobileContainerInner.length; i++) {
-        mobileContainerInner[i].style.width = '240px';
-    }
 }
 
 function openContainerSearch() {
@@ -35,10 +31,6 @@ function closeContainer() {
     let mobileContainer = document.getElementsByClassName('mobile__container');
     for (i = 0; i < mobileContainer.length; i++) {
         mobileContainer[i].style.display = 'none';
-    }
-    let mobileContainerInner = document.getElementsByClassName('mobile__container-inner');
-    for (i = 0; i < mobileContainerInner.length; i++) {
-        mobileContainerInner[i].style.width = '0px';
     }
 }
 

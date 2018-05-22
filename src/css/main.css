@@ -193,7 +193,10 @@ footer .fab.button-tag {
     height: 35px;
     padding: 11px;
 }
-
+aside .title-article:hover .fab.button-tag{
+    color: #ffffff;
+    background: #95cac5;
+}
 footer .fab.button-tag {
     color: #95cac5;
     margin: 0 5px;
@@ -211,7 +214,7 @@ footer .fab.button-tag:hover {
 .video-cover::before, .music-cover::before  {
     font-family: Font Awesome\ 5 Free;
     color: #ffffff;
-    font-size: 50px;
+    font-size: 3em;
     background: rgba(0, 0, 0, .3);
     z-index: 1;
     width: 100%;
@@ -336,8 +339,9 @@ footer .title-special {
 .carousel-gallery>div:first-child span:last-child {
     color: #3d3d3d;
 }
-.thumbs div {
+.thumbs a {
     display: inline-block;
+    cursor: pointer;
     width: 10px;
     height: 10px;
     margin: 5px;

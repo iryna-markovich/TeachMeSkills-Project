@@ -49,10 +49,9 @@
 }
 .mobile__container-inner {
     height: 100vh;
-    width: 0px;
+    width: 240px;
     position: relative;
     background: #ffffff;
-    transition: width 0.3s ease;
 } 
 .mobile__menu .title-nav, .mobile__menu .title-nav a {
     width: 100%;

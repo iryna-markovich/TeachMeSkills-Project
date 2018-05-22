@@ -12,6 +12,9 @@
     .wrapper {
         width: 90%;
     }
+    .form__holder {
+        width: 80%;
+    }
     .section__logo>a {
         text-decoration: none;
         padding: 100px 0 0;
@@ -39,7 +42,7 @@
     .section__half-part_2-2 a, .section__half-part_2-3 a {
         padding: 30%;
     }
-    .section__part-left, .section__part-right, .header__nav-top, .header__nav-main {
+    .section__part-left, .section__part-right, .header__nav-top, .nav-main {
         display: none;
     }
     .section__logo {
@@ -133,7 +136,7 @@
         width: 90%;
     }
     .title-category, .title-category a, .subtitle-category, .subtitle-category a {
-        width: 100%;
+        width: auto;
         text-align: left;
     }
     .video-gallery .section__half-part {
